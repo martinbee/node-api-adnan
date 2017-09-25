@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +15,13 @@
     "body-parser": "^1.18.2",
     "express": "^4.15.5",
     "mongoose": "^4.11.13"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.12.1"
   }
 }
